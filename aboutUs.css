@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+  margin-bottom: 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+
+.content {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.container:hover {
+  transform: rotateX(2deg) rotateY(10deg) scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

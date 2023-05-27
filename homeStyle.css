@@ -29,7 +29,7 @@ nav a {
   margin-right: 20px;
 }
 
-.container {
+/* .container {
   color: darkgreen;
   font-size: 10rem;
 }
@@ -53,7 +53,11 @@ nav a {
 }
 
 .image {
-  flex-basis: 50%;
+  flex-basis: 95%;
+  background-position: left top;
+  margin-right: 50px;
+  margin-top: 2px;
+  background-image: url("image/foodParcels.jpg");
 }
 
 .image img {
@@ -90,7 +94,153 @@ button:hover {
   background-color: white;
   color: rgb(15, 75, 15);
   border: 2px solid rgb(15, 75, 15);
+} */
+
+body,
+html {
+  height: 100%;
 }
+
+.exp-img {
+  background-image: url("image/export.jpg");
+  height: fit-content;
+
+  /* Control the height of the image */
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+.wholesale-img {
+  background-image: url("image/wholesale.jpeg");
+  height: fit-content;
+
+  /* Control the height of the image */
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  min-height: 650px;
+}
+
+.parcel-img {
+  background-image: url("image/foodParcels.jpg");
+  height: fit-content;
+
+  /* Control the height of the image */
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  min-height: 640px;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  text-align: center;
+  max-width: 400px;
+  min-height: 500px;
+  padding: 30px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-family: "Gambetta", serif;
+  letter-spacing: -1px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: rgb(43, 135, 16);
+  outline: none;
+  text-align: center;
+  font-weight: bold;
+}
+.container h2:hover {
+  font-variation-settings: "wght" 582;
+  letter-spacing: 1px;
+}
+
+.container p {
+  font-family: "Gambetta", serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+.btn {
+  display: inline-block;
+  background-color: rgb(43, 135, 16);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  background-color: #433bde;
+}
+
+/* .btn {
+  background-color: rgb(43, 135, 16);
+  color: white;
+  font-family: "Gambetta", serif;
+  font-size: 17px;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+  border: 10px;
+  border-color: black;
+} */
 
 .bestSellers {
   display: flex;
