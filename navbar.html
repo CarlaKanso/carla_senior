@@ -1,8 +1,140 @@
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 30px;
+    background-color: #faf6f6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-logo img {
+    height: 50px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-menu li {
+    margin-right: 1rem;
+  }
+
+  .navbar-menu li:last-child {
+    margin-right: 0;
+  }
+
+  .navbar-menu li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+
+  .navbar-menu li:hover > ul {
+    display: block;
+  }
+
+  .navbar-menu li a:hover {
+    --c: #0c8a27;
+    /* the color */
+    --s: 0.15em;
+
+    line-height: 1.1em;
+    padding-bottom: calc(2.1 * var(--s));
+    background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left
+        0 bottom var(--s) / calc(2 * var(--s)) var(--s) repeat-x,
+      conic-gradient(from -45deg at bottom, var(--c) 90deg, #0000 0) left
+        var(--s) bottom 0 / calc(2 * var(--s)) var(--s) repeat-x;
+    -webkit-mask: linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0) 0 / var(--_p, 0%) padding-box no-repeat;
+    transition: 0.5s;
+    --_p: 100%;
+    color: var(--c);
+  }
+
+  .navbar-dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-dropdown ul li {
+    margin: 0;
+  }
+
+  .navbar-dropdown ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+  }
+
+  .navbar-dropdown:hover > ul {
+    display: block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    color: green;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbar-auth a {
+    color: black;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+
+  .button-primary {
+    background-color: #0c8a27;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 9999px;
+  }
+
+  .button-primary:hover {
+    transform: rotateX(2deg) rotateY(10deg) scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+</style>
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="navbar.css" />
-  </head>
+  <head> </head>
   <body>
     <nav>
       <div class="navbar-logo">
@@ -15,18 +147,18 @@
         <li>
           <a href="#">Proformat</a>
           <ul class="dropdown-content">
-            <li><a href="#">Export</a></li>
-            <li><a href="#">Wholesale and Retail</a></li>
-            <li><a href="#">Food Parcels</a></li>
+            <li><a href="proforma.html">Export</a></li>
+            <li><a href="proforma.html">Wholesale and Retail</a></li>
+            <li><a href="proforma.html">Food Parcels</a></li>
           </ul>
         </li>
         <li><a href="#">Catalogue</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
       </ul>
       <div class="navbar-auth">
-        <a href="#">Log In</a>
-        <a href="#" class="button-primary">Sign Up</a>
+        <a href="login.html">Log In</a>
+        <a href="signup.html" class="button-primary">Sign Up</a>
       </div>
     </nav>
   </body>

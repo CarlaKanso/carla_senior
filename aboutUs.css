@@ -34,19 +34,20 @@ nav {
   font-weight: bold;
 }
 
-.navbar-menu li:hover>ul {
+.navbar-menu li:hover > ul {
   display: block;
 }
 
 .navbar-menu li a:hover {
-  --c: #0c8a27;
-  /* the color */
+  --c: #0c8a27; /* the color */
   --s: 0.15em;
 
   line-height: 1.1em;
   padding-bottom: calc(2.1 * var(--s));
-  background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left 0 bottom var(--s) / calc(2 * var(--s)) var(--s) repeat-x,
-    conic-gradient(from -45deg at bottom, var(--c) 90deg, #0000 0) left var(--s) bottom 0 / calc(2 * var(--s)) var(--s) repeat-x;
+  background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left 0
+      bottom var(--s) / calc(2 * var(--s)) var(--s) repeat-x,
+    conic-gradient(from -45deg at bottom, var(--c) 90deg, #0000 0) left var(--s)
+      bottom 0 / calc(2 * var(--s)) var(--s) repeat-x;
   -webkit-mask: linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0) 0 / var(--_p, 0%) padding-box no-repeat;
   transition: 0.5s;
@@ -77,7 +78,7 @@ nav {
   padding: 0.5rem;
 }
 
-.navbar-dropdown:hover>ul {
+.navbar-dropdown:hover > ul {
   display: block;
 }
 
@@ -89,7 +90,6 @@ nav {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -131,10 +131,8 @@ nav {
 
 .container {
   position: relative;
-  max-width: 800px;
-  /* Maximum width */
-  margin: 0 auto;
-  /* Center it */
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
   margin-bottom: 50px;
   transition: transform 0.3s, box-shadow 0.3s;
   transform-style: preserve-3d;
@@ -142,20 +140,13 @@ nav {
 }
 
 .container .content {
-  position: absolute;
-  /* Position the background text */
-  bottom: 0;
-  /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0);
-  /* Fallback color */
-  background: rgba(0, 0, 0, 0.5);
-  /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  /* white text */
-  width: 100%;
-  /* Full width */
-  padding: 20px;
-  /* Some padding */
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* white text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
 }
 
 .content {
