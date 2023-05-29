@@ -6,6 +6,7 @@ body {
   overflow-x: auto;
   overflow-y: scroll;
 }
+
 header {
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -16,11 +17,13 @@ header {
   right: 0;
   z-index: 999;
 }
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 nav a {
   color: #333;
   text-decoration: none;
@@ -98,6 +101,7 @@ nav a {
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
+
 .tile-link:hover .tile-img1 {
   box-shadow: 5px 5px rgba(244, 170, 200, 0.4),
     10px 10px rgba(244, 170, 200, 0.3), 15px 15px rgba(244, 170, 200, 0.2),
@@ -539,6 +543,7 @@ html {
   display: inline-block;
   transition: 0.5s;
 }
+
 .social-icon__link:hover {
   transform: translateY(-10px);
 }
@@ -607,6 +612,7 @@ html {
   0% {
     background-position-x: 1000px;
   }
+
   100% {
     background-positon-x: 0px;
   }
@@ -616,6 +622,7 @@ html {
   0% {
     background-position-x: -1000px;
   }
+
   100% {
     background-positon-x: 0px;
   }
